@@ -62,7 +62,16 @@ console.log("Esercizio 6 " + teachers);
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
-const lewisIndex = null;
+for (let i = 0; i < teachers.length; i++) {
+  if (teachers[i] === "Lewis") {
+    const lewisIndex = i;
+    console.log("Esercizio 7 " + i);
+  }
+}
+
+
+
+
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
