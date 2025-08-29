@@ -38,8 +38,15 @@ for (let i = 0 ; i < teachers.length; i++) {
 
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-const firstTeacher = null;
-
+const firstTeacher = teachers[0];
+console.log(firstTeacher);
+for (let i = 0 ; i< teachers.length ; i++) {
+  teachers[i] = teachers[i+1];
+  if (i === teachers.length-1) {
+    teachers.length = teachers.length-1;
+  }
+}
+console.log(teachers);
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
 
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
