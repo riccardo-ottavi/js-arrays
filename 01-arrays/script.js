@@ -52,6 +52,13 @@ teachers[teachers.length] = "Vanessa";
 console.log("Esercizio 5 " + teachers);
 
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
+for (let i = teachers.length; i > 0 ; i--) {
+    teachers[i] = teachers[i-1];
+    
+  }
+teachers[0] = "Sarah";
+console.log("Esercizio 6 " + teachers);
+
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
